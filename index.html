@@ -246,9 +246,43 @@
                         <p class="text-xs text-neutral-500">22 Ezekiel College of Theology Road, Ukpenu, Ekpoma, Edo State, Nigeria.</p>
                     </div>
                 </div>
-                <!-- Responsive Embedded Iframe Map -->
                 <div class="relative w-full h-64 rounded-lg overflow-hidden border border-stone-200 shadow-inner">
                     <iframe src="https://google.com" class="absolute top-0 left-0 w-full h-full border-0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. CONTACT, FUNCTIONAL PRAYER REQUEST & TESTIMONY ALTAR -->
+        <section id="contact" class="py-16 bg-stone-200">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden grid md:grid-cols-5 border border-stone-300">
+                    <div class="bg-gradient-to-br from-red-900 to-red-950 text-white p-8 md:col-span-2 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold mb-2 uppercase tracking-wide">Altar of Prayer</h3>
+                            <p class="text-red-100 text-xs leading-relaxed mb-8">Do you need someone to agree with you in prayer or have testimonies of what God has done? Reach out directly to the ministry registry.</p>
+                        </div>
+                        <div class="space-y-4 text-xs font-mono">
+                            <div class="flex items-center gap-3">
+                                <i class="fa-solid fa-map-pin text-amber-400"></i>
+                                <span>Ukpenu, Ekpoma</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Functional Email Pipeline Delivery Configuration via Formspree Backend Framework -->
+                    <form action="https://formspree.io" method="POST" class="p-8 md:col-span-3 space-y-4">
+                        <h3 class="text-lg font-bold text-red-950 mb-2 uppercase tracking-tight">Send a Request / Testimony</h3>
+                        <div class="grid grid-cols-2 gap-4">
+                            <input type="text" name="name" required placeholder="Your Name" class="w-full border border-stone-300 rounded p-2 text-xs focus:outline-none focus:border-red-800 bg-stone-50">
+                            <input type="email" name="_replyto" required placeholder="Email Address" class="w-full border border-stone-300 rounded p-2 text-xs focus:outline-none focus:border-red-800 bg-stone-50">
+                        </div>
+                        <select name="purpose" class="w-full border border-stone-300 rounded p-2 text-xs bg-stone-50 focus:outline-none focus:border-red-800">
+                            <option value="Prayer Request">Submit a Prayer Request</option>
+                            <option value="Testimony / Thanksgiving">Share a Testimony / Thanksgiving</option>
+                            <option value="General Inquiry">General Inquiry</option>
+                        </select>
+                        <textarea name="message" rows="4" required placeholder="Write your points clearly..." class="w-full border border-stone-300 rounded p-2 text-xs focus:outline-none focus:border-red-800 bg-stone-50"></textarea>
+                        <button type="submit" class="w-full bg-red-800 text-white font-bold py-2.5 rounded hover:bg-red-900 transition text-xs uppercase tracking-wider cursor-pointer shadow border-b-2 border-amber-500">Submit Securely</button>
+                    </form>
                 </div>
             </div>
         </section>

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercy Tabernacle - Go Liberate The Land</title>
+    <!-- Tailwind CSS Play CDN -->
+    <script src="https://jsdelivr.net"></script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+</head>
+<body class="bg-stone-50 text-neutral-800 font-sans flex flex-col min-h-screen">
+
+    <!-- 1. NAVIGATION BAR -->
+    <nav class="bg-white shadow-md sticky top-0 z-50 border-b border-amber-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 flex items-center gap-2 font-bold text-base md:text-lg text-red-900 tracking-tight">
+                    <i class="fa-solid fa-church text-amber-500 text-xl"></i>
+                    <div class="flex flex-col leading-tight">
+                        <span>MERCY TABERNACLE</span>
+                        <span class="text-[9px] text-amber-600 tracking-widest font-semibold uppercase">Liberation Assembly</span>
+                    </div>
+                </div>
+                
+                <!-- Desktop Links -->
+                <div class="hidden md:flex space-x-6 font-medium text-sm">
+                    <a href="#" class="text-red-700">Home</a>
+                    <a href="#mandate" class="text-neutral-600 hover:text-red-700 transition">Mandate & Vision</a>
+                    <a href="#about" class="text-neutral-600 hover:text-red-700 transition">Pastor's Welcome</a>
+                    <a href="#history" class="text-neutral-600 hover:text-red-700 transition">Our Journey</a>
+                    <a href="#services" class="text-neutral-600 hover:text-red-700 transition">Services</a>
+                    <a href="#give" class="text-neutral-600 hover:text-red-700 transition">Giving</a>
+                </div>
+                
+                <div class="hidden md:flex">
+                    <a href="#give" class="bg-red-800 text-white px-4 py-2 rounded shadow-md hover:bg-red-900 transition text-sm font-semibold border-b-2 border-amber-500">Give Online</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="menu-btn" class="text-neutral-600 hover:text-red-700 focus:outline-none cursor-pointer">
+                        <i id="menu-icon" class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu panel -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-neutral-100 px-4 pt-2 pb-4 space-y-3 shadow-inner">
+            <a href="#" class="block text-red-700 font-medium py-1">Home</a>
+            <a href="#mandate" class="block text-neutral-600 hover:text-red-700 font-medium py-1">Mandate & Vision</a>
+            <a href="#about" class="block text-neutral-600 hover:text-red-700 font-medium py-1">Pastor's Welcome</a>
+            <a href="#history" class="block text-neutral-600 hover:text-red-700 font-medium py-1">Our Journey</a>
+            <a href="#services" class="block text-neutral-600 hover:text-red-700 font-medium py-1">Services</a>
+            <a href="#give" class="block text-neutral-600 hover:text-red-700 font-medium py-1">Giving</a>
+            <a href="#give" class="block text-center bg-red-800 text-white px-4 py-2 rounded font-medium mt-2">Give Online</a>
+        </div>
+    </nav>
+
+    <main class="flex-grow">
+        
+        <!-- 2. PROPHETIC HERO HEADER BLOCK -->
+        <header class="relative bg-gradient-to-br from-red-950 via-red-900 to-amber-950 text-white py-24 px-4 text-center overflow-hidden border-b-4 border-amber-500">
+            <div class="absolute inset-0 bg-black/40 z-0"></div>
+            <div class="max-w-4xl mx-auto relative z-10">
+                <span class="bg-amber-500 text-red-950 font-bold uppercase tracking-widest text-xs px-3 py-1 rounded-full shadow-sm mb-4 inline-block">MERCY TABERNACLE</span>
+                <h1 class="text-3xl md:text-5xl font-black tracking-tight text-white mb-2 uppercase drop-shadow-md">Where Everybody is Somebody & JESUS IS LORD</h1>
+                <p class="text-amber-400 font-bold tracking-widest uppercase text-xs md:text-sm mb-6">Household of Faith Christian Liberation Assembly</p>
+                <p class="text-base md:text-lg text-stone-100 max-w-2xl mx-auto mb-8 font-light italic">"God is liberating men by his word and with the power of the Holy Ghost, thereby empowering them for a meaningful living."</p>
+                <div class="flex justify-center gap-4 flex-wrap">
+                    <a href="#services" class="bg-amber-500 text-red-950 px-6 py-3 rounded font-bold hover:bg-amber-400 transition shadow-lg text-xs md:text-sm">Join Us This Sunday</a>
+                    <a href="#mandate" class="border border-white/60 bg-white/10 text-white px-6 py-3 rounded font-bold hover:bg-white hover:text-red-950 transition text-xs md:text-sm">Our Mandate</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- 2.5 THE PROPHETIC MANDATE & VISION SECTION -->
+        <section id="mandate" class="py-16 bg-gradient-to-b from-amber-50 to-stone-50 border-b border-stone-200">
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="text-center mb-12">
+                    <i class="fa-solid fa-scroll text-amber-600 text-3xl mb-2"></i>
+                    <h2 class="text-2xl md:text-3xl font-black text-red-950 uppercase tracking-tight">Mandate & Core Vision</h2>
+                </div>
+                
+                <div class="grid md:grid-cols-12 gap-8 items-stretch">
+                    <!-- Left 5 Cols: Mandate Scripture -->
+                    <div class="md:col-span-5 bg-white p-6 rounded-xl shadow-md border border-amber-200 relative flex flex-col justify-center">
+                        <div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-red-800 text-amber-400 text-[10px] font-bold px-3 py-0.5 rounded uppercase tracking-wider">The Mandate (Isaiah 44:13)</div>
+                        <p class="text-lg font-serif text-red-900 font-bold italic leading-relaxed mb-4 mt-2 text-center">
+                            "Go Liberate the Land by the ANOINTING and as you Go: I will raise you in Righteousness, and I will direct all your ways. You shall build my city, and you shall let go my CAPTIVES, not for PRICE nor REWARD."
+                        </p>
+                        <span class="text-[10px] text-neutral-500 text-center uppercase font-semibold tracking-wider block">— Saith the LORD OF HOST</span>
+                    </div>
+
+                    <!-- Right 7 Cols: Core Vision Points -->
+                    <div class="md:col-span-7 bg-white p-6 rounded-xl shadow-md border border-stone-200 flex flex-col justify-between">
+                        <h3 class="text-base font-bold text-red-950 uppercase tracking-wider mb-4 border-b border-stone-100 pb-2"><i class="fa-solid fa-eye text-amber-500 mr-2"></i>Our Five-Fold Vision</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start gap-3 text-sm text-neutral-600"><i class="fa-solid fa-circle-check text-red-800 mt-1 text-xs"></i> <span>Mandated to preach & teach the gospel to all nations.</span></li>
+                            <li class="flex items-start gap-3 text-sm text-neutral-600"><i class="fa-solid fa-circle-check text-red-800 mt-1 text-xs"></i> <span>To heal the sick by divine power.</span></li>
+                            <li class="flex items-start gap-3 text-sm text-neutral-600"><i class="fa-solid fa-circle-check text-red-800 mt-1 text-xs"></i> <span>Bringing deliverance to the oppressed.</span></li>
+                            <li class="flex items-start gap-3 text-sm text-neutral-600"><i class="fa-solid fa-circle-check text-red-800 mt-1 text-xs"></i> <span>Reconciling men back to God.</span></li>
+                            <li class="flex items-start gap-3 text-sm text-neutral-600"><i class="fa-solid fa-circle-check text-red-800 mt-1 text-xs"></i> <span>Setting the captives completely free.</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. ABOUT & PASTOR WELCOME SECTION -->
+        <section id="about" class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-12 gap-12 items-center">
+                    <div class="md:col-span-5 relative bg-gradient-to-b from-red-900 to-red-950 rounded-2xl overflow-hidden h-[400px] shadow-xl flex items-center justify-center text-stone-200 border-2 border-amber-400">
+                        <i class="fa-solid fa-user-tie text-8xl opacity-10 absolute"></i>
+                        <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black via-black/80 to-transparent p-6 text-center">
+                            <h4 class="font-bold text-white text-lg tracking-wide uppercase">Apst. Ofure Bobby Eboigbe (Gideon)</h4>
+                            <p class="text-amber-400 text-xs font-medium uppercase tracking-widest mt-1">Lead Shepherd</p>
+                        </div>
+                    </div>
+                    <div class="md:col-span-7">
+                        <span class="text-red-700 font-bold uppercase tracking-wider text-xs">Pastoral Welcome</span>
+                        <h2 class="text-2xl md:text-3xl font-black text-red-950 mt-1 mb-4 uppercase tracking-tight">Calvary Greetings</h2>
+                        <p class="text-neutral-600 leading-relaxed mb-6 text-sm md:text-base italic bg-stone-50 p-4 rounded-lg border-l-4 border-amber-500">
+        <!-- 3.5 THE TESTIMONY JOURNEY SECTION -->
+        <section id="history" class="py-16 bg-stone-100 border-t border-b border-stone-200">
+            <div class="max-w-5xl mx-auto px-4">
+                <div class="text-center mb-12">
+                    <span class="text-red-700 font-bold uppercase tracking-wider text-xs">Our Legacy of Faith</span>
+                    <h2 class="text-3xl font-black text-red-950 mt-1 uppercase tracking-tight">The Journey So Far</h2>
+                </div>
+                
+                <div class="space-y-8 relative before:absolute before:inset-0 before:left-4 md:before:left-1/2 before:w-0.5 before:bg-amber-300">
+                    <div class="relative flex flex-col md:flex-row items-start md:justify-between group">
+                        <div class="absolute left-4 md:left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-red-800 border-4 border-white shadow-sm z-10"></div>
+                        <div class="w-full md:w-[46%] pl-10 md:pl-0 md:text-right">
+                            <span class="inline-block text-xs font-bold text-amber-600 uppercase mb-1">July 2007 — The Foundation</span>
+                            <h4 class="text-base font-bold text-red-950 mb-1">Surrender & Search</h4>
+                            <p class="text-xs text-neutral-600 leading-relaxed bg-white p-4 rounded-lg shadow-sm border border-neutral-200">
+                                The journey began when our pastor surrendered his life to the lordship of Jesus. To grow in kingdom knowledge, he attended the Word of Faith Bible Institute (WOFBI) at Raji-Oba, Lagos, where mentorship from Bishop David Oyedepo sparked a deep quest to understand God's unique plan.
+                            </p>
+                        </div>
+                        <div class="hidden md:block w-[46%]"></div>
+                    </div>
+
+                    <div class="relative flex flex-col md:flex-row-reverse items-start md:justify-between group">
+                        <div class="absolute left-4 md:left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-red-800 border-4 border-white shadow-sm z-10"></div>
+                        <div class="w-full md:w-[46%] pl-10 md:pl-0 text-left">
+                            <span class="inline-block text-xs font-bold text-amber-600 uppercase mb-1">Sept 15, 2007 — Visionary Encounter</span>
+                            <h4 class="text-base font-bold text-red-950 mb-1">Isaiah 61 Revelation</h4>
+                            <p class="text-xs text-neutral-600 leading-relaxed bg-white p-4 rounded-lg shadow-sm border border-neutral-200">
+                                Seeking clear divine direction, he embarked on a 5-day fast at Ojodu Berger, Lagos, studying Kenneth Hagin's blueprint. On the third day (September 18), the Spirit spoke directly through Isaiah 61. Later, a second confirmation came through Luke 4:18 during a midnight prayer altar in Lagos.
+                            </p>
+                        </div>
+                        <div class="hidden md:block w-[46%]"></div>
+                    </div>
+
+                    <div class="relative flex flex-col md:flex-row items-start md:justify-between group">
+                        <div class="absolute left-4 md:left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-red-800 border-4 border-white shadow-sm z-10"></div>
+                        <div class="w-full md:w-[46%] pl-10 md:pl-0 md:text-right">
+                            <span class="inline-block text-xs font-bold text-amber-600 uppercase mb-1">Sept 2012 — Prophetic Mandate</span>
+                            <h4 class="text-base font-bold text-red-950 mb-1">"Go Liberate the Land"</h4>
+                            <p class="text-xs text-neutral-600 leading-relaxed bg-white p-4 rounded-lg shadow-sm border border-neutral-200">
+                                Returning to Benin City, he resolved to answer the call completely. In a vivid visionary encounter, the Spirit gave him Isaiah 44:13, charging him with specific instructions and landmarks concerning Ekpoma and Ukpenu to deliver captives free without price or reward.
+                            </p>
+                        </div>
+                        <div class="hidden md:block w-[46%]"></div>
+                    </div>
+
+                    <div class="relative flex flex-col md:flex-row-reverse items-start md:justify-between group">
+                        <div class="absolute left-4 md:left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-amber-500 border-4 border-white shadow-sm z-10"></div>
+                        <div class="w-full md:w-[46%] pl-10 md:pl-0 text-left">
+                            <span class="inline-block text-xs font-bold text-red-800 uppercase mb-1">Nov 25, 2012 — First Service</span>
+                            <h4 class="text-base font-bold text-red-950 mb-1">Commencement in a Parlour</h4>
+                            <p class="text-xs text-neutral-600 leading-relaxed bg-white p-4 rounded-lg shadow-md border-l-4 border-amber-500">
+                                Arriving in Ekpoma with just a bag, a Bible, a bell, an anointing oil bottle, and a megaphone, he anointed Ejodamen junction ground. Led to an abandoned building once used by local witch doctors, our first official service held on November 25, 2012 in a parlour—starting only with God, Jesus, and the Holy Spirit!
+                            </p>
+                        </div>
+                        <div class="hidden md:block w-[46%]"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. SERVICE LOGISTICS & YEARLY PROGRAMS SECTION -->
+        <section id="services" class="py-16 max-w-7xl mx-auto px-4 border-b border-stone-200">
+            <div class="grid md:grid-cols-12 gap-8 items-start">
+                
+                <!-- Left 7 Cols: Weekly Service Operations -->
+                <div class="md:col-span-7 bg-white p-6 rounded-xl shadow-sm border border-stone-200">
+                    <h3 class="text-base font-bold text-red-950 uppercase tracking-wider mb-6 border-b border-stone-100 pb-2"><i class="fa-solid fa-clock text-amber-500 mr-2"></i>Weekly Service Days</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between bg-stone-50 p-3 rounded border-l-4 border-red-800">
+                            <div>
+                                <h4 class="font-bold text-sm text-neutral-800">SUNDAY SERVICE</h4>
+                                <p class="text-xs text-neutral-500 font-medium">Liberation Hour</p>
+                            </div>
+                            <span class="text-xs bg-red-100 text-red-900 font-bold px-3 py-1 rounded">08:00 AM</span>
+                        </div>
+                        <div class="flex items-center justify-between bg-stone-50 p-3 rounded border-l-4 border-amber-500">
+                            <div>
+                                <h4 class="font-bold text-sm text-neutral-800">TUESDAY SERVICE</h4>
+                                <p class="text-xs text-neutral-500 font-medium">Communion for Dominion</p>
+                            </div>
+                            <span class="text-xs bg-amber-100 text-amber-900 font-bold px-3 py-1 rounded">05:00 PM</span>
+                        </div>
+                        <div class="flex items-center justify-between bg-stone-50 p-3 rounded border-l-4 border-red-800">
+                            <div>
+                                <h4 class="font-bold text-sm text-neutral-800">THURSDAY SERVICE</h4>
+                                <p class="text-xs text-neutral-500 font-medium">Faith Clinic (Healing & Deliverance)</p>
+                            </div>
+                            <span class="text-xs bg-red-100 text-red-900 font-bold px-3 py-1 rounded">04:00 PM</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right 5 Cols: Special Annual Encounters -->
+                <div class="md:col-span-5 bg-white p-6 rounded-xl shadow-sm border border-stone-200">
+                    <h3 class="text-base font-bold text-red-950 uppercase tracking-wider mb-6 border-b border-stone-100 pb-2"><i class="fa-solid fa-calendar text-amber-500 mr-2"></i>Yearly Programs</h3>
+                    <div class="space-y-3 text-xs">
+                        <div class="p-3 bg-red-50/50 rounded border border-red-100">
+                            <span class="font-bold text-red-900 block uppercase">Oyakhilome (End of Struggle)</span>
+                            <span class="text-neutral-500 font-medium block mt-0.5">Every August</span>
+                        </div>
+                        <div class="p-3 bg-amber-50/40 rounded border border-amber-100">
+                            <span class="font-bold text-amber-800 block uppercase">Festival of Deliverance</span>
+                            <span class="text-neutral-500 font-medium block mt-0.5">Every October 1st</span>
+                        </div>
+                        <div class="p-3 bg-stone-50 rounded border border-stone-200">
+                            <span class="font-bold text-neutral-800 block uppercase">Church Anniversary / Convention</span>
+                            <span class="text-neutral-500 font-medium block mt-0.5">Every November</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Sanctuary Location banner -->
+            <div class="mt-8 bg-white p-4 rounded-xl shadow-sm border border-stone-200 max-w-2xl mx-auto flex items-center gap-4 text-left">
+                <i class="fa-solid fa-location-dot text-red-800 text-2xl pl-2"></i>
+                <div>
+                    <h4 class="font-bold text-xs text-red-950 uppercase tracking-wider">Sanctuary Base Location</h4>
+                    <p class="text-xs text-neutral-600 mt-0.5">22 Ezekiel College of Theology Road, Ukpenu, Ekpoma, Edo State, Nigeria.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4.5 FINANCIAL SEED & TITHES SECTION -->
+        <section id="give" class="py-16 bg-amber-50/40 border-b border-stone-200 text-center">
+            <div class="max-w-3xl mx-auto px-4">
+                <i class="fa-solid fa-wallet text-amber-600 text-3xl mb-2"></i>
+                <h2 class="text-2xl md:text-3xl font-black text-red-950 uppercase tracking-tight mb-2">Covenant Giving</h2>
+                <p class="text-xs md:text-sm text-neutral-600 max-w-xl mx-auto mb-8">Support the liberation mandate and build God's city through your tithes, offerings, and sacrificial seeds.</p>
+                <div class="bg-white rounded-xl p-6 shadow-md border border-amber-200 max-w-md mx-auto text-left relative overflow-hidden">
+                    <div class="absolute right-0 top-0 bg-amber-500 text-red-950 text-[9px] font-bold px-3 py-1 uppercase rounded-bl tracking-widest font-mono">Zenith Bank</div>
+                    <span class="text-[10px] text-neutral-400 font-bold uppercase tracking-wider block">Official Account Name</span>
+                    <h4 class="font-black text-xs md:text-sm text-red-950 uppercase tracking-tight mb-4 mt-0.5 leading-tight">HOUSEHOLD OF FAITH CHRISTIAN LIBERATION ASSEMBLY</h4>
+                    <span class="text-[10px] text-neutral-400 font-bold uppercase tracking-wider block">Account Number</span>
+                    <p class="text-2xl font-mono font-black text-red-900 tracking-wider">1016218803</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-neutral-950 text-neutral-400 py-12 px-4 border-t-4 border-amber-500 text-xs">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-8 mb-8 text-left">
+            <div>
+                <h3 class="text-white font-bold text-sm mb-3 uppercase tracking-wider">MERCY TABERNACLE</h3>
+                <p class="leading-relaxed text-neutral-400">Operating under the strategic prophetic commission to break constraints and deliver the oppressed free without price or reward.</p>
+            </div>
+            <div>
+                <h3 class="text-white font-bold text-sm mb-3 uppercase tracking-wider">Quick Links</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:text-amber-400 transition">Home Base</a></li>
+                    <li><a href="#mandate" class="hover:text-amber-400 transition">Prophetic Mandate</a></li>
+                    <li><a href="#services" class="hover:text-amber-400 transition">Service Times</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-white font-bold text-sm mb-3 uppercase tracking-wider">Contact Platform</h3>
+                <p class="leading-relaxed text-neutral-400">22 Ezekiel College of Theology Road, Ukpenu, Ekpoma, Edo State, Nigeria.</p>
+                <p class="mt-2 font-mono text-neutral-500">Domain: mercytabernacle.org.ng</p>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto pt-8 border-t border-neutral-800 text-center flex flex-col md:flex-row justify-between gap-4 text-neutral-500">
+            <p>&copy; 2026 Mercy Tabernacle. All Rights Reserved. Built as a voluntary ministry pledge.</p>
+        </div>
+    </footer>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); });
+    </script>
+</body>
+</html>

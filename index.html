@@ -16,8 +16,8 @@
     <style>
         body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
         h1, h2, h3, h4 { font-family: 'Merriweather', serif; }
-       .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; }
-       .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 12px; }
+      .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; }
+      .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 12px; }
     </style>
 </head>
 <body class="bg-stone-50 text-neutral-800 flex flex-col min-h-screen">
@@ -76,7 +76,7 @@
             </div>
         </header>
 
-        <!-- YOUTUBE SERMONS SECTION -->
+        <!-- YOUTUBE SERMONS SECTION - AUTO UPDATED -->
         <section id="media" class="py-16 bg-white">
             <div class="max-w-6xl mx-auto px-4">
                 <div class="text-center mb-10">
@@ -85,16 +85,20 @@
                     <p class="text-neutral-600 text-sm mt-2">Be blessed by the Word. Subscribe on YouTube to never miss a service.</p>
                 </div>
 
-                <!-- Featured Video -->
-                <div class="mb-8 bg-stone-100 p-4 rounded-xl shadow-md">
-                    <div class="video-container">
-                        <!-- REPLACE THIS VIDEO ID WITH YOUR LATEST SERMON ID -->
-                        <iframe src="https://www.youtube.com/embed?listType=user_uploads&list=mercytabernacle7524" title="Mercy Tabernacle Sermons" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
+                <!-- LATEST VIDEO -->
+                <div id="latest-video" class="mb-8 bg-stone-100 p-4 rounded-xl shadow-md">
+                    <h3 class="text-center text-red-700 font-bold mb-3">Loading Latest Sermon...</h3>
+                    <div class="video-container"></div>
+                </div>
+
+                <!-- ALL VIDEOS GRID -->
+                <h3 class="text-center text-xl font-bold mb-4 text-red-950">All Sermons</h3>
+                <div id="videos" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <p class="text-center col-span-full">Loading all videos...</p>
                 </div>
 
                 <!-- CTA to Channel -->
-                <div class="text-center">
+                <div class="text-center mt-8">
                     <a href="https://youtube.com/@mercytabernacle7524" target="_blank" class="inline-flex items-center gap-2 bg-red-700 text-white px-6 py-3 rounded-lg font-bold hover:bg-red-800 transition shadow-md">
                         <i class="fa-brands fa-youtube"></i> Subscribe on YouTube @mercytabernacle7524
                     </a>
@@ -170,7 +174,7 @@
             </div>
         </section>
 
-        <!-- CONTACT -->
+        <!-- CONTACT - UPDATED -->
         <section id="contact" class="py-16 bg-stone-200">
             <div class="max-w-4xl mx-auto px-4">
                 <div class="bg-white rounded-2xl shadow-lg grid md:grid-cols-5">
@@ -179,7 +183,16 @@
                         <p class="text-red-100 text-xs mb-6">Need prayer or want to share a testimony? We are here for you.</p>
                         <div class="space-y-3 text-xs">
                             <div class="flex gap-3"><i class="fa-solid fa-map-pin text-amber-400 mt-1"></i><span>No 21, Ezekiel College Rd, Ukpenu, Ekpoma</span></div>
-                            <div class="flex gap-3"><i class="fa-solid fa-phone text-amber-400"></i><span>[Add Phone Later]</span></div>
+                            <div class="flex gap-3"><i class="fa-solid fa-phone text-amber-400"></i><span>Call: +234 815 490 0442</span></div>
+                            <div class="flex gap-3"><i class="fa-brands fa-whatsapp text-amber-400"></i>
+                                <span>
+                                    WhatsApp:
+                                    <a href="https://wa.me/2348154900442" class="hover:underline">08154900442</a>,
+                                    <a href="https://wa.me/2349156274199" class="hover:underline">09156274199</a>,
+                                    <a href="https://wa.me/2349114422686" class="hover:underline">09114422686</a>
+                                </span>
+                            </div>
+                            <div class="flex gap-3"><i class="fa-solid fa-envelope text-amber-400"></i><span>Email: mercytabernacleekpoma@gmail.com</span></div>
                             <div class="flex gap-3"><i class="fa-brands fa-youtube text-amber-400"></i><a href="https://youtube.com/@mercytabernacle7524" target="_blank" class="hover:underline">@mercytabernacle7524</a></div>
                         </div>
                     </div>
@@ -194,13 +207,12 @@
                 </div>
             </div>
         </section>
-        
 <!-- GIVING -->
         <section id="give" class="py-16 bg-amber-50/40 text-center">
             <div class="max-w-3xl mx-auto px-4"><i class="fa-solid fa-wallet text-amber-600 text-3xl mb-2"></i>
                 <h2 class="text-2xl font-black text-red-950 uppercase mb-2">Covenant Giving</h2>
                 <p class="text-sm text-neutral-600 mb-8">Support the liberation mandate and build God's city.</p>
-                <div class="bg-white rounded-xl p-6 shadow-md max-w-md mx-auto text-left relative border border-amber-200">
+                <div class="bg-white rounded-xl p-6 shadow-md max-w-md mx-auto text-left relative border-amber-200">
                     <div class="absolute right-0 top-0 bg-amber-500 text-red-950 text-[9px] font-bold px-3 py-1 uppercase rounded-bl tracking-widest font-mono">Zenith Bank</div>
                     <span class="text-[10px] text-neutral-400 font-bold uppercase tracking-wider block">Account Name</span>
                     <h4 class="font-black text-sm text-red-950 uppercase mb-4 mt-0.5">HOUSEHOLD OF FAITH CHRISTIAN LIBERATION ASSEMBLY</h4>
@@ -211,6 +223,7 @@
         </section>
     </main>
 
+    
     <!-- FOOTER -->
     <footer class="bg-neutral-950 text-neutral-400 py-12 px-4 border-t-4 border-amber-500 text-xs">
         <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-8 mb-8 text-left">
@@ -230,7 +243,8 @@
             <div>
                 <h3 class="text-white font-bold text-sm mb-3 uppercase tracking-wider">Contact Platform</h3>
                 <p class="leading-relaxed text-neutral-400">No 21, Along Ezekiel College of Theology Road, Ukpenu, Ekpoma, Edo State, Nigeria.</p>
-                <p class="mt-2"><a href="https://youtube.com/@mercytabernacle7524" target="_blank" class="hover:text-amber-400"><i class="fa-brands fa-youtube mr-1"></i>YouTube: @mercytabernacle7524</a></p>
+                <p class="mt-2"><i class="fa-solid fa-envelope mr-1"></i> mercytabernacleekpoma@gmail.com</p>
+                <p class="mt-1"><a href="https://youtube.com/@mercytabernacle7524" target="_blank" class="hover:text-amber-400"><i class="fa-brands fa-youtube mr-1"></i>YouTube: @mercytabernacle7524</a></p>
                 <p class="mt-1 font-mono text-neutral-500">Domain: [To be updated later]</p>
             </div>
         </div>
@@ -241,9 +255,38 @@
     </footer>
 
     <script>
+        // AUTO YOUTUBE SCRIPT
+        const API_KEY = "AIzaSyCyWFuZiLmG4CZOMDSkRhVZIpXD5dBgybg";
+        const CHANNEL_ID = "UCzPeoDvMlRahwOyF7AdvBBQ";
+
+        // 1. GET LATEST VIDEO
+        fetch(`https://www.googleapis.com/youtube/v3/search?key=${API_KEY}&channelId=${CHANNEL_ID}&order=date&part=snippet&type=video&maxResults=1`)
+       .then(res => res.json()).then(data => {
+            if(data.items && data.items.length > 0){
+                const video = data.items[0];
+                document.getElementById("latest-video").innerHTML = `
+                    <h3 class="text-center text-red-700 font-bold mb-3">Latest Sermon: ${video.snippet.title}</h3>
+                    <div class="video-container"><iframe src="https://www.youtube.com/embed/${video.id.videoId}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                `;
+            }
+        })
+
+        // 2. GET ALL VIDEOS
+        fetch(`https://www.googleapis.com/youtube/v3/search?key=${API_KEY}&channelId=${CHANNEL_ID}&order=date&part=snippet&type=video&maxResults=18`)
+       .then(res => res.json()).then(data => {
+            let html = "";
+            data.items.forEach(video => {
+                html += `<div class="bg-stone-100 p-3 rounded-lg shadow"><div class="video-container"><iframe src="https://www.youtube.com/embed/${video.id.videoId}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><h4 class="font-bold text-sm mt-2 text-red-900">${video.snippet.title}</h4></div>`;
+            });
+            document.getElementById("videos").innerHTML = html;
+        }).catch(err => {
+            document.getElementById("videos").innerHTML = "<p class='text-center text-red-600'>Error loading videos.</p>";
+        });
+
         const menuBtn = document.getElementById('menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
         menuBtn.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); });
     </script>
 </body>
 </html>
+        
